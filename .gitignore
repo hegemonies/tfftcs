@@ -1,2 +1,2 @@
 labs/build/**
-labs/.gradle
+labs/.gradle/**
