@@ -1,6 +1,7 @@
 package tfftcs.firstlab
 
 fun Double.format(digits: Int) = "%.${digits}f".format(this)
+fun Double.format(whole: Int, fractional: Int) = "%${whole}.${fractional}f".format(this)
 
 fun main() {
     compute21()
