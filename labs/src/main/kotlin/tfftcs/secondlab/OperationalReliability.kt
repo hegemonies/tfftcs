@@ -16,7 +16,8 @@ fun operationalReliability(
         for (r in (0..i-nLittle)) {
             acc2 += Pi(r, t, i, lambda)
         }
-        acc += P(i, mu, lambda, 1) * acc2
+        // acc += P(i, mu, lambda, 1) * acc2
+        acc += Pj(mu, lambda, i) * acc2
     }
     return acc
 }

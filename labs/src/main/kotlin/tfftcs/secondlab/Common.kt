@@ -1,5 +1,6 @@
 package tfftcs.secondlab
 
+import java.lang.Math.pow
 import kotlin.math.exp
 import kotlin.math.pow
 
@@ -25,6 +26,13 @@ fun Pi(
     lambda: Double
 ) =
     (((i * lambda * t).pow(r)) / factorial(r)) * exp(-(i * lambda * t))
+
+fun Pj(
+    mu: Double,
+    lambda: Double,
+    j: Int
+) =
+    (mu / lambda).pow(j.toDouble()) * ((1.0 / factorial(j)) * exp(-(mu / lambda)))
 
 fun U(
     i: Int,

@@ -4,12 +4,6 @@ import tfftcs.firstlab.format
 import kotlin.system.measureTimeMillis
 
 fun main() {
-    // compute(
-    //     listOf(8, 9, 10),
-    //     (0..24 step 2).toList()
-    // ) { x, y ->
-    //     (x + y).toDouble()
-    // }
     measureTimeMillis {
         `compute S`()
         `compute operational reliability`()
